@@ -7,6 +7,13 @@ module.exports = {
 
     });
 
+    app.get('/claim_notice', function (req, res) {
+
+      res.render('claim_notice',
+                {'assetPath' : assetPath});
+
+    });
+
     app.get('/sample', function (req, res) {
 
       res.render('sample',
